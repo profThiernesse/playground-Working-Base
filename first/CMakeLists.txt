@@ -1,4 +1,4 @@
 cmake_minimum_required (VERSION 2.6)
-project (test)
-add_executable(test main.c)
+project (premier)
+add_executable(premier main.c)
 
