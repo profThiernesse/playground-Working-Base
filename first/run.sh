@@ -1,5 +1,6 @@
 #!/bin/sh
 
-make && ./premier && tail output.txt
+make && ./premier
+echo TECHIO> redirect-streams "Test"
 echo "SALUT"
-more output.txt
+tail output.txt
