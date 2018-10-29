@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./premier && ls -al && cd .. && ls -al
+make && ./premier && ls .. -al
