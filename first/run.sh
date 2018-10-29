@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./premier && ls && more output.txt
+make && ./premier && more output.txt
