@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./premier && ls ../target -al
+make && ./premier && ls -al
