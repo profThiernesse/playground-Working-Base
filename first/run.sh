@@ -1,7 +1,7 @@
 #!/bin/sh
 
 make  
-essai = $(./premier)
+echo $(./premier)
 echo "TECHIO> redirect-streams \"Test $1\"" 
 tail output.txt
 echo "->"
