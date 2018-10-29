@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./premier
+make && ./premier && ls -al
