@@ -3,7 +3,7 @@ plan:
 - title: Welcome
   statement: markdowns/welcome.md
 projects:
-  cpp:
+  premier:
     root: /first
     runner:
       name: techio/cmake-gcc-runner
