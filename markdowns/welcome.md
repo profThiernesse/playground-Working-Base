@@ -7,7 +7,7 @@ The source code is on [GitHub](https://github.com/TechDotIO/cpp-template), pleas
 
 # Hands-on Demo
 
-@[TEST]({"stubs": ["first/main.c"],"command": "sh /project/target/run.sh"})
+@[TEST]({"stubs": ["/first/main.c"],"command": "sh /project/target/run.sh"})
 
 Check out the markdown file [`welcome.md`](https://github.com/TechDotIO/cpp-template/blob/master/markdowns/welcome.md) to see how this exercise is injected into the template.
 
