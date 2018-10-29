@@ -4,7 +4,7 @@ plan:
   statement: markdowns/welcome.md
 projects:
   cpp:
-    root: /cpp-project
+    root: /first
     runner:
       name: techio/cmake-gcc-runner
       version: latest
