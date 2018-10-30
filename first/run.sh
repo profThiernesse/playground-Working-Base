@@ -17,7 +17,6 @@ fi
 
 echo "TECHIO> redirect-streams \"MORE\"" 
 
-
 for fichier in test/TEST_*; do
     echo $fichier
 done
