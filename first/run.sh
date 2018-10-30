@@ -2,6 +2,7 @@
 gcc check.c -o check
 make  
 #./premier
+:'
 ./check ./premier input.txt output.txt
 echo "TECHIO> redirect-streams \"File output $1\"" 
 tail output.txt
@@ -16,9 +17,10 @@ else
 fi
 
 echo "TECHIO> redirect-streams \"MORE\"" 
+'
 
 for file in test/TEST_*.in; do
-  ./check $1 "test/"$file".in" "test/"$file".out"
+  ./check "./"$1 "test/"$file".in" "test/"$file".out"
   echo "TECHIO> redirect-streams \"File output\"" 
   tail output.txt
   result=0
