@@ -1,5 +1,5 @@
 #!/bin/sh
-gcc check.c
+gcc check.c -o check
 ls -al
 make  
 ./premier
