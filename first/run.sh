@@ -19,7 +19,7 @@ for file in test/TEST_*.in; do
   fi  
 done
 
-if (( $result )); then
+if (( $result -eq 0)); then
   echo "TECHIO> success true"
 else
   echo "TECHIO> success false"
