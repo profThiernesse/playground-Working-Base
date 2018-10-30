@@ -6,7 +6,7 @@ int main() {
     freopen("input.txt","r",stdin);
     freopen("output.txt","w",stdout);
     
-    system("./main");
+    system("./premier");
     
     return 0;
 }
