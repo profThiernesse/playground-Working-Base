@@ -6,9 +6,9 @@ for file in test/TEST_*.in; do
   ./check "./"$1 $file "output.txt"
   echo "TECHIO> redirect-streams \"Execution output\"" 
   echo $file
-  echo "INPUT" && tail $file
+  echo "INPUT " $(<tail $file)
   echo "OUTPUT"
-  tail output.txt
+  cat output.txt
   result=true
   if (diff -d -b -B output.txt $file".out" > output.nfo); then
     echo "TECHIO> message --channel \"Testing Results\" $file passé"
