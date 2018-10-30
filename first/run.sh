@@ -2,6 +2,7 @@
 gcc check.c -o check
 make  
 
+result=true
 for file in test/TEST_*.in; do
   ./check "./"$1 $file "output.txt"
   echo "TECHIO> redirect-streams \"Execution output\"" 
@@ -13,7 +14,6 @@ for file in test/TEST_*.in; do
   cat output.txt
   echo " "
   
-  result=true
   if (diff -d -b -B output.txt $file".out" > output.nfo); then
     echo "TECHIO> message --channel \"Testing Results\" $file passé"
     #echo "TECHIO> success true"
