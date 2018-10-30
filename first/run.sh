@@ -15,8 +15,4 @@ else
   tail output.nfo
 fi
 
-echo "TECHIO> redirect-streams \"MORE\"" 
 
-for file in test/TEST_*; do
-    echo $file
-done
