@@ -13,8 +13,8 @@ for file in test/TEST_*.in; do
   else
     echo "TECHIO> message --channel \"Test Result\" $file échoué"
     #echo "TECHIO> success false"
-    echo "TECHIO> redirect-streams \"Difference\""
-    tail output.nfo
+    #echo "TECHIO> redirect-streams \"Difference\""
+    #tail output.nfo
     result=1
   fi
   
