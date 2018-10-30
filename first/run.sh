@@ -18,8 +18,8 @@ for file in test/TEST_*.in; do
     result=1
   fi  
 done
-
-if (( $result -eq 0)); then
+zero=0
+if (( $result -eq $zero )); then
   echo "TECHIO> success true"
 else
   echo "TECHIO> success false"
