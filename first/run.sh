@@ -2,7 +2,8 @@
 gcc check.c -o check
 ls -al
 make  
-./premier
+#./premier
+./check
 echo "TECHIO> redirect-streams \"Test $1\"" 
 tail output.txt
 diff -q output.txt check.txt
