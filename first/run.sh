@@ -6,7 +6,7 @@ for file in test/TEST_*.in; do
   ./check "./"$1 $file "output.txt"
   echo "TECHIO> redirect-streams \"File output\"" 
   #tail output.txt
-  result=0
+  result=true
   if (diff -d -b -B output.txt $file".out" > output.nfo); then
     echo "TECHIO> message --channel \"Test Result\" $file passé"
     #echo "TECHIO> success true"
@@ -15,11 +15,11 @@ for file in test/TEST_*.in; do
     #echo "TECHIO> success false"
     #echo "TECHIO> redirect-streams \"Difference\""
     #tail output.nfo
-    result=1
+    result=false
   fi  
 done
 zero=0
-if $result -eq $zero; then
+if [ "$result" = true ]; then
   echo "TECHIO> success true"
 else
   echo "TECHIO> success false"
