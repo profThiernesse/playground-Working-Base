@@ -1,4 +1,6 @@
 #!/bin/sh
+gcc check.c
+ls -al
 make  
 ./premier
 echo "TECHIO> redirect-streams \"Test $1\"" 
