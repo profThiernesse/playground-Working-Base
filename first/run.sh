@@ -14,3 +14,13 @@ else
   echo "TECHIO> redirect-streams \"Difference\""
   tail output.nfo
 fi
+
+echo "TECHIO> redirect-streams \"MORE\"" 
+
+
+for file in /test/*
+do
+    echo $file
+done
+
+
