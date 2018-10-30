@@ -6,7 +6,7 @@ for file in test/TEST_*.in; do
   ./check "./"$1 $file "output.txt"
   echo "TECHIO> redirect-streams \"Execution output\"" 
   echo $file
-  info=$(cat $file)
+  info = $(cat $file)
   echo "INPUT $info"
   echo "OUTPUT $(< output.txt)"
   
