@@ -24,7 +24,7 @@ for file in test/TEST_*.in; do
   echo "TECHIO> redirect-streams \"File output\"" 
   tail output.txt
   result=0
-  if (diff -d -b -B output.txt "test/"$file".out" > output.nfo); then
+  if (diff -d -b -B output.txt $file".out" > output.nfo); then
     echo "TECHIO> message --channel \"Test Result\" $file passé"
     #echo "TECHIO> success true"
   else
