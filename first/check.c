@@ -3,8 +3,8 @@
 
 int main(int argc, char *argv[]) {
     
-    freopen("input.txt","r",stdin);
-    freopen("output.txt","w",stdout);
+    freopen(argv[2],"r",stdin);
+    freopen(argv[3],"w",stdout);
     
     system(argv[1]);
     
