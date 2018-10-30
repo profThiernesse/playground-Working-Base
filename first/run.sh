@@ -2,7 +2,7 @@
 gcc check.c -o check
 make  
 #./premier
-./check "./premier"
+./check ./premier
 echo "TECHIO> redirect-streams \"File output $1\"" 
 tail output.txt
 if (diff -d -b -B output.txt check.txt > output.nfo); then
