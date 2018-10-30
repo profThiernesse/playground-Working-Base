@@ -16,12 +16,11 @@ for file in test/TEST_*.in; do
     #echo "TECHIO> redirect-streams \"Difference\""
     #tail output.nfo
     result=1
-  fi
-  
-  if $result; then
-    echo "TECHIO> success true"
-  else
-    echo "TECHIO> success false"
-  fi
-  
+  fi  
 done
+
+if $result; then
+  echo "TECHIO> success true"
+else
+  echo "TECHIO> success false"
+fi
