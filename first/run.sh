@@ -1,8 +1,8 @@
 #!/bin/sh
-
+var essai
 make  
-echo $(./premier)
+essai = $(./premier)
 echo "TECHIO> redirect-streams \"Test $1\"" 
 tail output.txt
 echo "->"
-echo $essai
+echo "->" $essai
