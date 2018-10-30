@@ -18,5 +18,16 @@ fi
 echo "TECHIO> redirect-streams \"MORE\"" 
 
 for file in test/TEST_*.in; do
-    echo $file
+  ./check $1 "test/"$file".in" "test/"$file".out"
+  echo "TECHIO> redirect-streams \"File output\"" 
+  tail output.txt
+  if (diff -d -b -B output.txt "test/"$file".out" > output.nfo); then
+    echo "TECHIO> message --channel \"Test Result\" $file passé"
+    echo "TECHIO> success true"
+  else
+    echo "TECHIO> message --channel \"Test Result\" $file échoué"
+    echo "TECHIO> success false"
+    echo "TECHIO> redirect-streams \"Difference\""
+    tail output.nfo
+  fi
 done
