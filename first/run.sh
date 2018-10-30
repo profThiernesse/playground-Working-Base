@@ -24,10 +24,10 @@ for file in test/TEST_*.in; do
   result=0
   if (diff -d -b -B output.txt "test/"$file".out" > output.nfo); then
     echo "TECHIO> message --channel \"Test Result\" $file passé"
-    echo "TECHIO> success true"
+    #echo "TECHIO> success true"
   else
     echo "TECHIO> message --channel \"Test Result\" $file échoué"
-    echo "TECHIO> success false"
+    #echo "TECHIO> success false"
     echo "TECHIO> redirect-streams \"Difference\""
     tail output.nfo
     result=1
