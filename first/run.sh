@@ -1,19 +1,17 @@
 #!/bin/sh
 gcc check.c -o check
-make  
+gcc $1".c -o "$1
+
+#make  
 
 result=true
 for file in test/TEST_*.in; do
   ./check "./"$1 $file "output.txt"
   
   if (diff -d -b -B output.txt $file".out" > output.nfo); then
-    echo "TECHIO> message --channel \"Testing Results\" $file passé"
-    #echo "TECHIO> success true"
+    echo "TECHIO> message --channel \"Testing Results\" $file success"
   else
-    echo "TECHIO> message --channel \"Testing Results\" $file échoué"
-    #echo "TECHIO> success false"
-    #echo "TECHIO> redirect-streams \"Difference\""
-    #tail output.nfo
+    echo "TECHIO> message --channel \"Testing Results\" $file failed"
     result=false
   fi  
   
