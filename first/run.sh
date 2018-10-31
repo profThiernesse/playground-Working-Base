@@ -5,7 +5,7 @@ make
 result=true
 for file in test/TEST_*.in; do
   ./check "./"$1 $file "output.txt"
-  echo "TECHIO> redirect-streams \"Execution output\"" 
+  echo "TECHIO> redirect-streams \"Test $file output\"" 
   
   echo $file
   echo "********** INPUT **********"
