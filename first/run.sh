@@ -1,8 +1,8 @@
 #!/bin/sh
 gcc check.c -o check
-gcc $1".c -o "$1
+#gcc $1".c -o "$1
 
-#make  
+make  
 
 result=true
 for file in test/TEST_*.in; do
