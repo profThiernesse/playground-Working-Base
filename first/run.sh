@@ -28,3 +28,5 @@ if [ "$result" = true ]; then
 else
   echo "TECHIO> success false"
 fi
+
+echo "TECHIO> terminal"
