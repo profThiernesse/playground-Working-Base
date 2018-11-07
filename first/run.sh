@@ -29,5 +29,5 @@ else
   echo "TECHIO> success false"
 fi
 
-echo "TECHIO> terminal"
+echo "TECHIO> terminal -i ./premier"
 sleep 120
