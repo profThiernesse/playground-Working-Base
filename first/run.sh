@@ -30,4 +30,4 @@ else
 fi
 
 echo "TECHIO> terminal -i ./premier"
-sleep 10
+sleep 120
