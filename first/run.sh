@@ -30,3 +30,4 @@ else
 fi
 
 echo "TECHIO> terminal"
+sleep 120
