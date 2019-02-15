@@ -29,5 +29,4 @@ else
   echo "TECHIO> success false"
 fi
 
-echo "TECHIO> terminal -i ./premier"
-sleep 120
+echo "TECHIO> open -s /project/target/ output.html"
